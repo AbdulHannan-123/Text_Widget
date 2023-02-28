@@ -29,10 +29,14 @@ class TextWidgetDemo extends StatelessWidget {
     return  SafeArea(
       child: Scaffold(
         body: Container(
-          height: 150,
+          color: Colors.grey,
+          // height: 150,
           child: Text(
             "My Name is Abdul Hannan My Name is Abdul Hannan My Name is Abdul Hannan My Name is Abdul Hannan My Name is Abdul HannanMy Name is Abdul Hannan",
             key: key,  // it identify the element tree of the current state of widget
+            style: TextStyle(
+              height: 5
+            ),
 
             // strutStyle:const StrutStyle(   // almost same as the TextStyle of the text
 
@@ -57,8 +61,20 @@ class TextWidgetDemo extends StatelessWidget {
 
             // semanticsLabel:  'Double dollars', //This is useful for replacing abbreviations or shorthands with the full text value:
 
-            
-  
+            // softWrap: false, // if fasle then try to adjust in single line or declear the infinite amount of width
+
+            // textAlign: TextAlign.left,  //just the alignment in the box 
+
+            // textDirection: TextDirection.rtl,     //  it is for the lange rtl is for urdu arabic and ltr is for english 
+
+            // textHeightBehavior: TextHeightBehavior(
+            //   // applyHeightToFirstAscent: false ,    // if you give the height then this property avoid the height at very top
+            //   // applyHeightToLastDescent: false  ,   // if you give the bottom then this property avoid the height at very bottom
+            //   // leadingDistribution: TextLeadingDistribution.proportional
+            // ),
+
+            // textWidthBasis:TextWidthBasis.longestLine ,   // this give the parent widget a width of longest line of text
+            // textWidthBasis:TextWidthBasis.parent ,       // this contains the length of his parent widget
           ),
         ),
       ),
